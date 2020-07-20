@@ -718,7 +718,7 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
           this.neu3d.addJson({ffbo_json: this._hemibrainMesh, showAfterLoadAll: true});
           window.active_neu3d_widget = this;
           this.neu3d.resetView();
-          this.sessionContext.session.kernel.requestExecute({code: super.initAnyClientCode(', url=u"ws://amacrine.ee.columbia.edu:20206/ws", ssl = None, default_key = False')}).done;
+          this.sessionContext.session.kernel.requestExecute({code: super.initAnyClientCode(', url=u"wss://hemibrain.neuronlp.fruitflybrain.org/ws", secret="jije83b3jJN*31", ssl = False, default_key = False')}).done;
           break;
         default:
           for (let mesh of Object.keys(this.neu3d.meshDict)){
