@@ -1,5 +1,12 @@
 import { LabIcon } from '@jupyterlab/ui-components';
 import ffboLogoStr from '../style/icons/ffbo_logo.svg';
+// import workspaceIconStr from '../style/icons/workspace_icon.svg';
+import fblSettingIconStr from '../style/icons/fbl_setting_icon.svg';
+import infoIconStr from '../style/icons/neuinfo_icon.svg';
+import neu3DIconStr from '../style/icons/neu3d_icon.svg';
+import neuGFXIconStr from '../style/icons/neugfx_icon.svg';
+import masterIconStr from '../style/icons/master_icon.svg';
+
 import chartAreaStr from '../style/icons/chart-area.svg';
 import codeStr from '../style/icons/code.svg';
 import listAltStr from '../style/icons/list-alt.svg';
@@ -24,13 +31,30 @@ export const fblIcon = new LabIcon({
 });
 export const neu3DIcon = new LabIcon({
   name: 'fbl:neu3d',
-  svgstr: ffboLogoStr // TODO: change to use neu3d icon
+  svgstr: neu3DIconStr
 });
 export const neuGFXIcon = new LabIcon({
   name: 'fbl:neugfx',
-  svgstr: ffboLogoStr // TODO: change to use gfx icon
+  svgstr: neuGFXIconStr
 });
+export const neuInfoIcon = new LabIcon({
+  name: 'fbl:neuinfo',
+  svgstr: infoIconStr
+});
+export const masterIcon = new LabIcon({
+  name: 'fbl:master',
+  svgstr: masterIconStr
+});
+// export const workspaceIcon = new LabIcon({
+//   name: 'fbl:workspace',
+//   svgstr: workspaceIconStr
+// });
 
+export const fblSettingIcon = new LabIcon({
+    name: 'fbl:setting',
+    svgstr: fblSettingIconStr
+  });
+  
 export const chartAreaIcon = new LabIcon({
   name: 'fbl:chart-area',
   svgstr: chartAreaStr

@@ -43,18 +43,13 @@ import {
  } from '@lumino/widgets';
 
 
-import { fblIcon, neu3DIcon, neuGFXIcon } from './icons';
-import { listingsInfoIcon } from '@jupyterlab/ui-components'
+import { fblIcon, masterIcon, neu3DIcon, neuGFXIcon, neuInfoIcon } from './icons';
 import { MasterWidget } from './master';
 import { InfoWidget } from './info/widget';
 
-// const INFO_MODULE_URL = "http://localhost:7995/build/bundle.js";
-// const MASTER_MODULE_URL = "http://localhost:7996/build/bundle.js";
 const NEUGFX_MODULE_URL = "http://localhost:7997/build/bundle.js";
 const NEU3D_MODULE_URL = "http://localhost:7998/build/bundle.js";
 const NEUANY_MODULE_URL = "http://localhost:7999/build/bundle.js"; //placeholder
-// const MASTER_CLASS_NAME = '.jp-FBL-Master';
-// const INFO_CLASS_NAME = '.jp-FBL-Info';
 const NEU3D_CLASS_NAME = '.jp-FBL-Neu3D';
 const NEUGFX_CLASS_NAME = '.jp-FBL-NeuGFX';
 const NEUANY_CLASS_NAME = '.jp-FBL-NeuAny';
@@ -380,7 +375,7 @@ async function activateFBL(
   masterWidget = new MasterWidget(fblWidgetTrackers);
   masterWidget.id = 'FBL-Master';
   masterWidget.title.caption = 'FBL Widgets and Running Sessions';
-  masterWidget.title.icon = fblIcon;
+  masterWidget.title.icon = masterIcon;
   // add to last
   if (restorer) {
     restorer.add(masterWidget, 'FBL-Master');
@@ -392,7 +387,7 @@ async function activateFBL(
   infoWidget = new InfoWidget();
   infoWidget.id = 'FBL-Info';
   infoWidget.title.caption = 'Information about neurons and synapses';
-  infoWidget.title.icon = listingsInfoIcon;
+  infoWidget.title.icon = neuInfoIcon;
   // add to last
   if (restorer) {
     restorer.add(infoWidget, 'FBL-Info');
