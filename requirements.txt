@@ -1,0 +1,15 @@
+jupyter
+jupyter==2.1.5
+txaio
+twisted
+autobahn
+crochet
+service_identity
+autobahn-sync
+matplotlib
+h5py
+seaborn
+fastcluster
+networkx
+scipy
+pandas

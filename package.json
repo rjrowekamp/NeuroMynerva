@@ -1,7 +1,7 @@
 {
-  "name": "@flybrainlab/fbl-extension",
-  "version": "0.1.0",
-  "description": "FBL Extension.",
+  "name": "@neuro-mynerva/fbl-extension",
+  "version": "0.2.0",
+  "description": "FlyBrainLab's JupyterLab Extension.",
   "keywords": [
     "jupyter",
     "jupyterlab",
@@ -9,6 +9,10 @@
   ],
   "license": "BSD-3-Clause",
   "author": "FlyBrainLab Dev Team",
+  "homepage": "https://github.com/FlyBrainLab/NeuroMynerva/",
+  "bugs": {
+    "url": "https://github.com/FlyBrainLab/NeuroMynerva/issues"
+  },
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
