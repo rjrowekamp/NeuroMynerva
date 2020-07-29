@@ -1,7 +1,6 @@
 **[Get Start](#get-started)** |
 **[Development](#development)** |
-**[Team](#team)** |
-**[Getting help](#getting-help)** |
+**[Getting help](#getting-help)** 
 
 # NeuroMynerva _v2alpha_ - [FlyBrainLab](http://fbl.fruitflybrain.org/)'s JupyterLab Extension
 NeuroMynerva V2 is currently in _alpha_, most main user-facing features have been implemented but we expect bug fixes and additional features to be incorporated in the near future. If you want to report a bug, please see [Getting Help](#getting-help). To follow the latest developments on this project, follow the Fruit Fly Brain Observatory(FFBO) [Twitter](https://twitter.com/flybrainobs) where we post weekly updates.
@@ -75,3 +74,6 @@ V2 of NeuroMynerva is a complete overhaul of V1, which was development when Jupy
 1. Kernel entry point: users currently can instantiated widgets by interacting with the JupyterLab Launch Menu or the Command Palette, which executes code in the front-end to spawn widgets. We are working on supporting spawning and control widgets from within the kernel (in Notebook or Console).
 2. FFBO Server Settings: currently the information regarding available backends and connection settings for each backend is not visible to the user. We are working on supporting user settings for interacting with custom Crossbar components.
 
+
+## Getting Help
+The best way to get help right now is to [submit an issue](https://github.com/FlyBrainLab/NeuroMynerva/issues);
