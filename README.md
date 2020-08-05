@@ -1,4 +1,6 @@
-# FlyBrainLab Extension
+# DEPRECATED - FlyBrainLab Extension
+
+**As of August 4th 2020, use `v2-dev` branch for development**
 
 ## Build Process
 **Note**: we are using multiple ports to serve JS resources, each port for a specific widget. The ports are:
