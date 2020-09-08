@@ -134,7 +134,8 @@
                 },
                 "DEBUG": {
                     "debug": false
-                },
+                }
+            },
             {
                 "NAME": "spinalcord",
                 "AUTH": {
