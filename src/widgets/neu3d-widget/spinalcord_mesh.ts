@@ -3,7 +3,7 @@
  */
 export var SpinalcordMesh = {
     "WhiteMatter": {
-        "filename": "./Outer_70.json",
+        "filename": "https://drive.google.com/file/d/18iBtH3hP-tbUus7Xkelo1xsmdz8F8C4d/view?usp=sharing",
         "label": "WhiteMatter",
         "highlight": false,
         "background": true,
@@ -14,7 +14,7 @@ export var SpinalcordMesh = {
         ]
     },
     "GrayMatter": {
-        "filename": "./Inner_70.json",
+        "filename": "https://drive.google.com/file/d/1D_DjZRdRsTTv-ysLKUNTrnGzgZFXoIA6/view?usp=sharing",
         "label": "GrayMatter",
         "highlight": false,
         "background": true,
