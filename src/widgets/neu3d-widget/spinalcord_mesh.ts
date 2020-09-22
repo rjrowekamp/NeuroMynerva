@@ -3,7 +3,7 @@
  */
 export var SpinalcordMesh = {
     "WhiteMatter": {
-        "filename": "https://raw.githack.com/rjrowekamp/NeuroMynerva/master/src/widgets/neu3d-widget/white_matter_50_5-9.json",
+        "filename": "https://raw.githack.com/rjrowekamp/NeuroMynerva/master/src/widgets/neu3d-widget/white_matter_50_5-69.json",
         "label": "WhiteMatter",
         "highlight": false,
         "background": true,
@@ -14,7 +14,7 @@ export var SpinalcordMesh = {
         ]
     },
     "GrayMatter": {
-        "filename": "https://raw.githack.com/rjrowekamp/NeuroMynerva/master/src/widgets/neu3d-widget/gray_matter_50_5-9.json",
+        "filename": "https://raw.githack.com/rjrowekamp/NeuroMynerva/master/src/widgets/neu3d-widget/gray_matter_50_5-69.json",
         "label": "GrayMatter",
         "highlight": false,
         "background": true,
