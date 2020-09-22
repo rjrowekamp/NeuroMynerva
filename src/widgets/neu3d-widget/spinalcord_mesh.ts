@@ -1,9 +1,9 @@
 /**
- * Exports only the mesh required to render adult Hemibrain NLP.
+ * Exports only the mesh required to render spinalcord
  */
 export var SpinalcordMesh = {
     "WhiteMatter": {
-        "filename": "https://drive.google.com/file/d/18iBtH3hP-tbUus7Xkelo1xsmdz8F8C4d/view?usp=sharing",
+        "filename": "https://raw.githack.com/rjrowekamp/NeuroMynerva/master/src/widgets/neu3d-widget/white_matter_50_5-9.json",
         "label": "WhiteMatter",
         "highlight": false,
         "background": true,
@@ -14,14 +14,14 @@ export var SpinalcordMesh = {
         ]
     },
     "GrayMatter": {
-        "filename": "https://drive.google.com/file/d/1D_DjZRdRsTTv-ysLKUNTrnGzgZFXoIA6/view?usp=sharing",
+        "filename": "https://raw.githack.com/rjrowekamp/NeuroMynerva/master/src/widgets/neu3d-widget/gray_matter_50_5-9.json",
         "label": "GrayMatter",
         "highlight": false,
         "background": true,
         "color": [
-            0.15,
             0.01,
-            0.15
+            0.25,
+            0.01
         ]
     }
 }
