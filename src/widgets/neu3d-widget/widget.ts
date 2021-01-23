@@ -923,7 +923,9 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
   readonly _larvaMesh: Object; // caching for dynamically import mesh
   readonly _hemibrainMesh: Object; // caching for dynamically import mesh
   readonly _spinalcordMesh: Object;
+  readonly _cord19Mesh: Object;
   readonly _cord20Mesh: Object;
+  readonly _cord27Mesh: Object;
   private _neu3DReady = new PromiseDelegate<void>();
   private _neu3dContainer: HTMLDivElement;
   private _neu3dSearchbar: HTMLDivElement;
