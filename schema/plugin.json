@@ -158,7 +158,47 @@
                 }
             },
             {
+                "NAME": "cord19",
+                "AUTH": {
+                    "ssl": true,
+                    "authentication": true,
+                    "ca_cert_file": "isrgrootx1.pem",
+                    "intermediate_cert_file": "letsencryptauthorityx3.pem"
+                },
+                "USER": {
+                    "user": "guest",
+                    "secret": "jije83b3jJN*31"
+                },
+                "SERVER": {
+                    "IP": "hemibrain.neuronlp.fruitflybrain.org",
+                    "dataset": ["default"],
+                    "realm": "realm1"
+                },
+                "DEBUG": {
+                    "debug": false
+                }            },
+            {
                 "NAME": "cord20",
+                "AUTH": {
+                    "ssl": true,
+                    "authentication": true,
+                    "ca_cert_file": "isrgrootx1.pem",
+                    "intermediate_cert_file": "letsencryptauthorityx3.pem"
+                },
+                "USER": {
+                    "user": "guest",
+                    "secret": "jije83b3jJN*31"
+                },
+                "SERVER": {
+                    "IP": "hemibrain.neuronlp.fruitflybrain.org",
+                    "dataset": ["default"],
+                    "realm": "realm1"
+                },
+                "DEBUG": {
+                    "debug": false
+                }            },
+            {
+                "NAME": "cord27",
                 "AUTH": {
                     "ssl": true,
                     "authentication": true,
