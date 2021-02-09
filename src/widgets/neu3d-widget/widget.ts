@@ -801,9 +801,9 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
             });
             break;
           case 'spinalcord':
-            this.neu3d._metadata.resetPosition = {x: -0.41758013880199485, y: 151.63625728674563, z: -50.50723330508691};
-            this.neu3d._metadata.upVector = {x: -0.0020307520395871814, y: -0.500303768173525, z: -0.8658475706482184};
-            this.neu3d._metadata.cameraTarget = {x: 17.593074756823892, y: 22.60567192152306, z: 21.838699853616273};
+            this.neu3d._metadata.resetPosition = {x: 0.0, y: 0.0, z: -5000.0};
+            this.neu3d._metadata.upVector = {x: 0.0, y: 1.0, z: 0.0};
+            this.neu3d._metadata.cameraTarget = {x: 0.0, y: 0.0, z: -50.0};
             this.neu3d.updateControls();
             this.neu3d.addJson({ffbo_json: this._spinalcordMesh, showAfterLoadAll: true});
             window.active_neu3d_widget = this;
@@ -816,9 +816,9 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
             });
             break;
           case 'cord19':
-            this.neu3d._metadata.resetPosition = {x: -0.41758013880199485, y: 151.63625728674563, z: -50.50723330508691};
-            this.neu3d._metadata.upVector = {x: -0.0020307520395871814, y: -0.500303768173525, z: -0.8658475706482184};
-            this.neu3d._metadata.cameraTarget = {x: 17.593074756823892, y: 22.60567192152306, z: 21.838699853616273};
+            this.neu3d._metadata.resetPosition = {x: 0.0, y: 0.0, z: -5000.0};
+            this.neu3d._metadata.upVector = {x: 0.0, y: 1.0, z: 0.0};
+            this.neu3d._metadata.cameraTarget = {x: 0.0, y: 0.0, z: -50.0};
             this.neu3d.updateControls();
             this.neu3d.addJson({ffbo_json: this._cord19Mesh, showAfterLoadAll: true});
             window.active_neu3d_widget = this;
@@ -831,9 +831,9 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
             });
             break;
           case 'cord20':
-            this.neu3d._metadata.resetPosition = {x: -0.41758013880199485, y: 151.63625728674563, z: -50.50723330508691};
-            this.neu3d._metadata.upVector = {x: -0.0020307520395871814, y: -0.500303768173525, z: -0.8658475706482184};
-            this.neu3d._metadata.cameraTarget = {x: 17.593074756823892, y: 22.60567192152306, z: 21.838699853616273};
+            this.neu3d._metadata.resetPosition = {x: 0.0, y: 0.0, z: -5000.0};
+            this.neu3d._metadata.upVector = {x: 0.0, y: 1.0, z: 0.0};
+            this.neu3d._metadata.cameraTarget = {x: 0.0, y: 0.0, z: -50.0};
             this.neu3d.updateControls();
             this.neu3d.addJson({ffbo_json: this._cord20Mesh, showAfterLoadAll: true});
             window.active_neu3d_widget = this;
@@ -846,9 +846,9 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
             });
             break;
           case 'cord27':
-            this.neu3d._metadata.resetPosition = {x: -0.41758013880199485, y: 151.63625728674563, z: -50.50723330508691};
-            this.neu3d._metadata.upVector = {x: -0.0020307520395871814, y: -0.500303768173525, z: -0.8658475706482184};
-            this.neu3d._metadata.cameraTarget = {x: 17.593074756823892, y: 22.60567192152306, z: 21.838699853616273};
+            this.neu3d._metadata.resetPosition = {x: 0.0, y: 0.0, z: -5000.0};
+            this.neu3d._metadata.upVector = {x: 0.0, y: 1.0, z: 0.0};
+            this.neu3d._metadata.cameraTarget = {x: 0.0, y: 0.0, z: -50.0};
             this.neu3d.updateControls();
             this.neu3d.addJson({ffbo_json: this._cord27Mesh, showAfterLoadAll: true});
             window.active_neu3d_widget = this;
