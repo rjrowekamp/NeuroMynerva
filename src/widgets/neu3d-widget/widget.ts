@@ -14,6 +14,8 @@ import { SpinalcordMesh } from './spinalcord_mesh';
 import { Cord19Mesh } from './Cord19_mesh';
 import { Cord20Mesh } from './Cord20_mesh';
 import { Cord27Mesh } from './Cord27_mesh';
+import { Cord41Mesh } from './Cord41_mesh';
+import { Cord45Mesh } from './Cord45_mesh';
 import { IFBLWidget, FBLWidget } from '../template-widget/index';
 import * as Icons from '../../icons';
 import '../../../style/widgets/neu3d-widget/neu3d.css';
@@ -79,6 +81,8 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
     this._cord19Mesh = Cord19Mesh
     this._cord20Mesh = Cord20Mesh
     this._cord27Mesh = Cord27Mesh
+    this._cord41Mesh = Cord41Mesh
+    this._cord45Mesh = Cord45Mesh
 
     this.addClass(Neu3D_CLASS_JLab);
     this._neu3dContainer = document.createElement('div');
@@ -860,6 +864,38 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
               (this._neu3dSearchbar.children[0].children[0] as HTMLInputElement).placeholder = "Not connected to processor.";  
             });
             break;
+
+          case 'cord41':
+            this.neu3d._metadata.resetPosition = {x: 0.0, y: 0.0, z: -5000.0};
+            this.neu3d._metadata.upVector = {x: 0.0, y: 1.0, z: 0.0};
+            this.neu3d._metadata.cameraTarget = {x: 0.0, y: 0.0, z: -50.0};
+            this.neu3d.updateControls();
+            this.neu3d.addJson({ffbo_json: this._cord41Mesh, showAfterLoadAll: true});
+            window.active_neu3d_widget = this;
+            this.neu3d.resetView();
+            // this.sessionContext.session.kernel.requestExecute({code: super.initClientCode(', custom_config = "spinalcord_config.ini"')});
+            this.initClient().then((value) => {
+              (this._neu3dSearchbar.children[0].children[0] as HTMLInputElement).placeholder = "Write Query (Example: show APL)";
+            }, (reason) => {
+              (this._neu3dSearchbar.children[0].children[0] as HTMLInputElement).placeholder = "Not connected to processor.";  
+            });
+            break;
+
+          case 'cord45':
+            this.neu3d._metadata.resetPosition = {x: 0.0, y: 0.0, z: -5000.0};
+            this.neu3d._metadata.upVector = {x: 0.0, y: 1.0, z: 0.0};
+            this.neu3d._metadata.cameraTarget = {x: 0.0, y: 0.0, z: -50.0};
+            this.neu3d.updateControls();
+            this.neu3d.addJson({ffbo_json: this._cord45Mesh, showAfterLoadAll: true});
+            window.active_neu3d_widget = this;
+            this.neu3d.resetView();
+            // this.sessionContext.session.kernel.requestExecute({code: super.initClientCode(', custom_config = "spinalcord_config.ini"')});
+            this.initClient().then((value) => {
+              (this._neu3dSearchbar.children[0].children[0] as HTMLInputElement).placeholder = "Write Query (Example: show APL)";
+            }, (reason) => {
+              (this._neu3dSearchbar.children[0].children[0] as HTMLInputElement).placeholder = "Not connected to processor.";  
+            });
+            break;
           default:
             (this._neu3dSearchbar.children[0].children[0] as HTMLInputElement).placeholder = 'Not connected to processor.';
             console.error(`[Neu3D-Widget] Processor ${newProcessor} not recognized.`);
@@ -926,6 +962,8 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
   readonly _cord19Mesh: Object;
   readonly _cord20Mesh: Object;
   readonly _cord27Mesh: Object;
+  readonly _cord41Mesh: Object;
+  readonly _cord45Mesh: Object;
   private _neu3DReady = new PromiseDelegate<void>();
   private _neu3dContainer: HTMLDivElement;
   private _neu3dSearchbar: HTMLDivElement;
