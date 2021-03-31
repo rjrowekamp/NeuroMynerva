@@ -45,7 +45,7 @@ pip install txaio twisted autobahn crochet service_identity autobahn-sync matplo
 pip install pypiwin32
 
 # install inhouse packages and NeuroMynerva
-git clone https://github.com/FlyBrainLab/NeuroMynerva.git
+git clone https://github.com/rjrowekamp/NeuroMynerva.git
 git clone https://github.com/FlyBrainLab/Neuroballad.git
 git clone https://github.com/FlyBrainLab/FBLClient.git
 cd ./Neuroballad
@@ -65,6 +65,23 @@ jupyter lab
 jupyter labextension link .
 jupyter lab --watch
 ```
+
+### Loading neurons
+
+Select mesh in Neu3D window from list.
+
+Connect to notebook's kernel
+
+In a notebook:
+```
+my_client = fbl.get_client()
+import json
+with open(NPATH + 'NeuroMynerva/src/widgets/neu3d-widget/' + JsonName,'r') as f:
+    neurons = json.load(f)
+my_client.tryComms(neurons)
+```
+Note: This will load thousands of neurons and can take some time. To plot fewer neurons, create a dictionary with 
+fewer keys in neurons['data']['data'].
 
 ## Changes from V1
 V2 of NeuroMynerva is a complete overhaul of V1, which was developed when JupyterLab was still in beta phase (v0.33). A few key differences are highlighted below:
