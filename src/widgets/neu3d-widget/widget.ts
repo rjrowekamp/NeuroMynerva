@@ -898,11 +898,6 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
               (this._neu3dSearchbar.children[0].children[0] as HTMLInputElement).placeholder = "Not connected to processor.";  
             });
             break;
-          default:
-            (this._neu3dSearchbar.children[0].children[0] as HTMLInputElement).placeholder = 'Not connected to processor.';
-            console.error(`[Neu3D-Widget] Processor ${newProcessor} not recognized.`);
-            break;
-
           case 'All Cords':
             this.neu3d._metadata.resetPosition = {x: 0.0, y: 0.0, z: -5000.0};
             this.neu3d._metadata.upVector = {x: 0.0, y: 1.0, z: 0.0};
