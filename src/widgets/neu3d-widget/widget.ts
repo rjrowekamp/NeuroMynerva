@@ -981,6 +981,7 @@ export class Neu3DWidget extends FBLWidget implements IFBLWidget {
   readonly _cord27Mesh: Object;
   readonly _cord41Mesh: Object;
   readonly _cord45Mesh: Object;
+  readonly _AllCordMesh: Object;
   private _neu3DReady = new PromiseDelegate<void>();
   private _neu3dContainer: HTMLDivElement;
   private _neu3dSearchbar: HTMLDivElement;
