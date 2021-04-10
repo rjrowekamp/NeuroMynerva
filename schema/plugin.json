@@ -262,7 +262,7 @@
                 }
             },
             {
-                "NAME": "All Cord",
+                "NAME": "All Cords",
                 "AUTH": {
                     "ssl": true,
                     "authentication": true,
